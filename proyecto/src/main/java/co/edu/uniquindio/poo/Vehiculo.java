@@ -4,13 +4,12 @@ public class Vehiculo {
     private String placa;
     private String modelo;
     private Propietario propietario;
-    
 
     public Vehiculo(String placa, String modelo, Propietario propietario) {
         this.placa = placa;
         this.modelo = modelo;
         this.propietario = propietario;
-        
+
     }
 
     public String getPlaca() {
@@ -36,6 +35,5 @@ public class Vehiculo {
     public void setPropietario(Propietario propietario) {
         this.propietario = propietario;
     }
-
 
 }

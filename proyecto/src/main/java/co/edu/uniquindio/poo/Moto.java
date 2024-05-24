@@ -4,10 +4,11 @@ public class Moto extends Vehiculo {
     private double velocidadMaxima;
     private TipoMoto tipo;
 
-    public Moto(String placa, String modelo, Propietario propietario,Puesto puesto, double velocidadMaxima, TipoMoto tipo) {
-        super(placa, modelo, propietario,puesto);
+    public Moto(String placa, String modelo, Propietario propietario, Puesto puesto, double velocidadMaxima,
+            TipoMoto tipo) {
+        super(placa, modelo, propietario, puesto);
         this.velocidadMaxima = velocidadMaxima;
-        this.tipo=tipo;
+        this.tipo = tipo;
     }
 
     public double getVelocidadMaxima() {
@@ -17,12 +18,13 @@ public class Moto extends Vehiculo {
     public void setVelocidadMaxima(double velocidadMaxima) {
         this.velocidadMaxima = velocidadMaxima;
     }
+
     public TipoMoto getTipo() {
         return tipo;
     }
 
     public void setTipo(TipoMoto tipo) {
-        this.tipo=tipo;
+        this.tipo = tipo;
     }
 
     @Override
@@ -64,6 +66,5 @@ public class Moto extends Vehiculo {
     public void setPuesto(Puesto puesto) {
         super.setPuesto(puesto);
     }
-    
-   
+
 }
