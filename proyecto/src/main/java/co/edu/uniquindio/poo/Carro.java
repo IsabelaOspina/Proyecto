@@ -1,48 +1,40 @@
-public class Carro extends Vehiculo{
+package co.edu.uniquindio.poo;
+
+public class Carro extends Vehiculo {
+    public Carro(String placa, String modelo, Propietario propietario) {
+        super(placa, modelo, propietario);
+    }
+
+    @Override
+    public String getModelo() {
+        return super.getModelo();
+    }
+
+    @Override
+    public String getPlaca() {
+        return super.getPlaca();
+    }
+
+    @Override
+    public Propietario getPropietario() {
+        return super.getPropietario();
+    }
+
+
+    @Override
+    public void setModelo(String modelo) {
+        super.setModelo(modelo);
+    }
+
+    @Override
+    public void setPlaca(String placa) {
+        super.setPlaca(placa);
+    }
+
+    @Override
+    public void setPropietario(Propietario propietario) {
+        super.setPropietario(propietario);
+    }
+
     
-private int numeroPuesto;
-private boolean disponible;
-private Vehiculo vehiculo;
-
-public Puesto(int numeroPuesto, Vehiculo vehiculo) {
-    this.numeroPuesto=numeroPuesto;
-    this.disponible=true;
-    this.vehiculo = vehiculo;
-
-}
-
-public void cambiarEstado(Vehiculo vehiculo){
-    if(this.disponible){
-        this.disponible = false;
-    }
-    else{
-        this.disponible = true;
-    }
-}
-
-public int getNumeroPuesto() {
-    return numeroPuesto;
-}
-
-public void setNumeroPuesto(int numeroPuesto) {
-    this.numeroPuesto = numeroPuesto;
-}
-
-public boolean isDisponible() {
-    return disponible;
-}
-
-public void setDisponible(boolean disponible) {
-    this.disponible = disponible;
-}
-
-public Vehiculo getVehiculo() {
-    return vehiculo;
-}
-
-public void setVehiculo(Vehiculo vehiculo) {
-    this.vehiculo = vehiculo;
-   
-}
-
 }
